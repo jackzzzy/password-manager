@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Check Strength</title>
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="main.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link href='https://css.gg/home.css' rel='stylesheet'>
+        <style>
+            .container {
+                position: static;
+                margin: auto;
+                margin-top: 80px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                max-width: 300px;
+                padding: 100px;
+                background-color: white;
+                border: 2px solid #892CDC;
+                border-radius: 40px;
+                padding-bottom: 50px;
+                padding-top: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sidebar">
+            <a href="home.html">Home</a>
+            <a href="page2.html">Password Generator</a>
+            <a href="displaytable.php">View/Edit</a>
+            <a href="checkstrength.html"  class="active">Check Strength</a>
+            <a href="about.html" >About</a>
+        </div>
+        <div class="header">
+            <span class="head" style="text-align: center;">Passman</span>
+        </div>
+    <div class="main">
+        <div class="container">
+            <form method="POST">
+                <h3 class="info" style="margin-top: -30px;">Enter Password to Check Strength</h3><br><br>
+                <input type="password" placeholder="Password" name="pwd" id="pw"><i class="show" id="togglePassword"></i><br><br>
+                <center>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </center>
+                <br>
+                <div id="strength"></div>
+                <br>
+                <button type="button" class="btn" onclick='location.href="page2.html"'>Try Password Generator</button>
+            </form>
+
+        </div>
+    </div>
+    <script src="pwstrength.js"></script>
+</body>
+
+</html>
